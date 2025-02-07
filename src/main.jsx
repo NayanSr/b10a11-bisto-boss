@@ -6,7 +6,7 @@ import router from './Router/Routes'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <div className='bg-teal-900 mx-4 p-1 text-white'>
+    <div className='bg-teal-900 w-11/12 mx-auto text-white'>
 
     <RouterProvider router={router}/>
     </div>

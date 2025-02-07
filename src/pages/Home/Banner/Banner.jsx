@@ -9,7 +9,7 @@ import image6 from "../../../assets/home/06.png";
 
 const Banner = () => {
   return (
-    <div className=" border-2">
+    <div className="">
       <Carousel>
         <div>
           <img className="" src={image1} />
