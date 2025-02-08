@@ -13,14 +13,12 @@ import image6 from "../../../assets/home/06.png";
 const OrderOnline = () => {
   return (
     <div className="mb-6">
-        <section className='w-2/4 mx-auto mb-4 text-center'
-        >
+      <section className="w-2/4 mx-auto mb-4 text-center">
         <SectionTitle
-        heading={"order online"}
-        subHeading={"From 11.00am to 10.00pm"}
-      />
-      
-        </section>
+          heading={"order online"}
+          subHeading={"From 11.00am to 10.00pm"}
+        />
+      </section>
       <section>
         <Swiper
           breakpoints={{
