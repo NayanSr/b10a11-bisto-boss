@@ -5,6 +5,7 @@ import dessertImg from "../../../assets/menu/dessert-bg.jpeg";
 import pizzaImg from "../../../assets/menu/pizza-bg.jpg";
 import saladImg from "../../../assets/menu/salad-bg.jpg";
 import soupImg from "../../../assets/menu/soup-bg.jpg";
+import drinkImg from "../../../assets/menu/menu-bg.png";
 import useMenu from "../../../hooks/useMenu";
 import SectionTitle from "../../Shared/SectionTitle/SectionTitle";
 import MenuCategory from "../MenuCategory/MenuCategory";
@@ -16,6 +17,7 @@ const Menu = () => {
   const desserts = menu.filter((item) => item.category == "dessert");
   const offereds = menu.filter((item) => item.category == "offered");
   const pizzas = menu.filter((item) => item.category == "pizza");
+  const drinks = menu.filter((item) => item.category == "drinks");
   return (
     <div>
       <Helmet>
@@ -62,7 +64,7 @@ const Menu = () => {
 
       <section className="py-4">
         <MenuCategory
-          heading={"salads"}
+          heading={"salad"}
           subHeading={"salads Sub Heading"}
           img={saladImg}
           items={salads}
@@ -75,10 +77,23 @@ const Menu = () => {
 
       <section className="py-4">
         <MenuCategory
-          heading={"soups"}
+          heading={"soup"}
           subHeading={"soups Sub Heading"}
           img={soupImg}
           items={soups}
+        />
+       
+      </section>
+
+
+
+
+      <section className="py-4">
+        <MenuCategory
+          heading={"drinks"}
+          subHeading={"drinks Sub Heading"}
+          img={drinkImg}
+          items={drinks}
         />
        
       </section>

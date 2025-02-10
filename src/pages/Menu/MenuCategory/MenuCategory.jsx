@@ -12,11 +12,11 @@ const MenuCategory = ({ img, heading, subHeading, items }) => {
           <PopularMenuCard key={i._id} menu={i} />
         ))}
       </section>
-     {/*  <Link to='/order'>
+      <Link to={`/order/${heading}`}>
         <button className="px-6 block mt-12 text-blue-300 font-semibold text-xl mx-auto border-b-4 border-yellow-700 rounded-xl">
           ORDER YOUR FAVOURITE FOOD
         </button>
-      </Link> */}
+      </Link>
     </div>
   );
 };
