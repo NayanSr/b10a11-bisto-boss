@@ -11,6 +11,9 @@ const Navbar = () => {
       <li className="text-lg">
         <NavLink to='/menu'>Menu</NavLink>
       </li>
+      <li className="text-lg">
+        <NavLink to='/order'>Order Food</NavLink>
+      </li>
     </>
   );
 
