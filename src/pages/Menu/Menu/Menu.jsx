@@ -13,11 +13,9 @@ const Menu = () => {
   const [menu] = useMenu();
   const salads = menu.filter((item) => item.category == "salad");
   const soups = menu.filter((item) => item.category == "soup");
-//   const popular = menu.filter((item) => item.category == "popular");
   const desserts = menu.filter((item) => item.category == "dessert");
   const offereds = menu.filter((item) => item.category == "offered");
   const pizzas = menu.filter((item) => item.category == "pizza");
-//   console.log(offered);
   return (
     <div>
       <Helmet>
@@ -34,9 +32,7 @@ const Menu = () => {
       {/* {img,heading,subHeading,items} */}
       <section className="my-4">
         <MenuCategory items={offereds} />
-        <button className="px-6 block mt-4 text-blue-300 font-semibold text-xl mx-auto border-b-4 border-yellow-700 rounded-xl">
-          ORDER YOUR FAVOURITE FOOD
-        </button>
+        
       </section>
 
       <section className="py-4">
@@ -46,9 +42,7 @@ const Menu = () => {
           img={dessertImg}
           items={desserts}
         />
-        <button className="px-6 block mt-4 text-blue-300 font-semibold text-xl mx-auto border-b-4 border-yellow-700 rounded-xl">
-          ORDER YOUR FAVOURITE FOOD
-        </button>
+        
       </section>
 
 
@@ -60,9 +54,7 @@ const Menu = () => {
           img={pizzaImg}
           items={pizzas}
         />
-        <button className="px-6 block mt-4 text-blue-300 font-semibold text-xl mx-auto border-b-4 border-yellow-700 rounded-xl">
-          ORDER YOUR FAVOURITE FOOD
-        </button>
+        
       </section>
 
 
@@ -75,9 +67,7 @@ const Menu = () => {
           img={saladImg}
           items={salads}
         />
-        <button className="px-6 block mt-4 text-blue-300 font-semibold text-xl mx-auto border-b-4 border-yellow-700 rounded-xl">
-          ORDER YOUR FAVOURITE FOOD
-        </button>
+       
       </section>
 
 
@@ -90,9 +80,7 @@ const Menu = () => {
           img={soupImg}
           items={soups}
         />
-        <button className="px-6 block mt-4 text-blue-300 font-semibold text-xl mx-auto border-b-4 border-yellow-700 rounded-xl">
-          ORDER YOUR FAVOURITE FOOD
-        </button>
+       
       </section>
     </div>
   );
